@@ -50,4 +50,3 @@ body:
         - label: Defined api endpoint for model consumption
         - label: Abstracted dataset and feature calls
         - label: Added logging, tracking, and model registration
-        
