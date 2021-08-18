@@ -12,6 +12,7 @@ body:
   attributes:
     label: Based on Experiment
     description: Link to the experiment issue or pull request that this model will be based on
+    placeholder: "#10 Experiment: Does customer behavior data predicts customer happiness survey results"
   validations:
     required: true
 - type: input
@@ -19,6 +20,7 @@ body:
   attributes:
     label: Related Ask
     description: Link to the ask issue that this model addresses
+    placeholder: "#1 We need to predict a thing"
   validations:
     required: false
 - type: textarea
