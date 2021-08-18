@@ -1,6 +1,6 @@
 name: Model Build and Deployment
 description: Convert successful experiment into a production-ready model
-title: "Model:"
+title: "Model: "
 labels: [model]
 body:
   - type: markdown
