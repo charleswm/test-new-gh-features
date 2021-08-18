@@ -3,50 +3,50 @@ description: Convert successful experiment into a production-ready model
 title: "Model: "
 labels: [model]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Now that you have built a successful experiment, it's time to productionalize the model.
-  - type: input
-    id: experiment-link
-    attributes:
-      label: Based on Experiment
-      description: Link to the experiment issue or pull request that this model will be based on
-    validations:
-      required: true
-   - type: input
-     id: ask-link
-     attributes:
-      label: Related Ask
-      description: Link to the ask issue that this model addresses
-     validations:
-      required: false
-  - type: textarea
-    id: model-description
-    attributes:
-      label: Model Description
-      description: What does this model do and how does it do it? What factors should be used to evaluate the model?
-      placeholder: "Don't forget to include details such as expected outputs, constraints, a description of how the model solves the problem"
-    validations:
-      required: true
-  - type: dropdown
-    id: deployment-type
-    attributes:
-      label: Deployement Type
-      description: What is the deployment type of this model?
-      options:
-        - Batch Deployment
-        - Online Inference / Real-Time
-        - Asynchronous (predictions on demand with lax latency requirements)
-    validations:
-      required: true
-  - type: checkboxes
-    id: mdoel-checks
-    attributes:
-      label: Model Checks
-      description: Have you done the following in preparation for moving to production?
-      options:
-        - label: Created tests for the model
-        - label: Defined api endpoint for model consumption
-        - label: Abstracted dataset and feature calls
-        - label: Added logging, tracking, and model registration
+- type: markdown
+  attributes:
+    value: |
+      Now that you have built a successful experiment, it's time to productionalize the model.
+- type: input
+  id: experiment-link
+  attributes:
+    label: Based on Experiment
+    description: Link to the experiment issue or pull request that this model will be based on
+  validations:
+    required: true
+- type: input
+  id: ask-link
+  attributes:
+    label: Related Ask
+    description: Link to the ask issue that this model addresses
+  validations:
+    required: false
+- type: textarea
+  id: model-description
+  attributes:
+    label: Model Description
+    description: What does this model do and how does it do it? What factors should be used to evaluate the model?
+    placeholder: "Don't forget to include details such as expected outputs, constraints, a description of how the model solves the problem"
+  validations:
+    required: true
+- type: dropdown
+  id: deployment-type
+  attributes:
+    label: Deployement Type
+    description: What is the deployment type of this model?
+    options:
+      - Batch Deployment
+      - Online Inference / Real-Time
+      - Asynchronous (predictions on demand with lax latency requirements)
+  validations:
+    required: true
+- type: checkboxes
+  id: mdoel-checks
+  attributes:
+    label: Model Checks
+    description: Have you done the following in preparation for moving to production?
+    options:
+      - label: Created tests for the model
+      - label: Defined api endpoint for model consumption
+      - label: Abstracted dataset and feature calls
+      - label: Added logging, tracking, and model registration
